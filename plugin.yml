@@ -1,0 +1,23 @@
+name: SimpleKickAll
+main: Luthfi\SimpleKickAll\Main
+version: 1.0.0
+api: 5.0.0
+author: Luthfi
+description: A plugin to kick all players from the server using /kickall and /kickalltimer commands.
+
+commands:
+  kickall:
+    description: Kicks all players from the server.
+    usage: /kickall
+    permission: kickall.command
+  kickalltimer:
+    description: Kicks all players from the server after a delay.
+    usage: /kickalltimer <time>
+    permission: kickalltimer.command
+permissions:
+  kickall.command:
+    description: Allows the player to use the /kickall command.
+    default: op
+  kickalltimer.command:
+    description: Allows the player to use the /kickalltimer command.
+    default: op
